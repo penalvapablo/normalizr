@@ -5,30 +5,7 @@ const { Server: IOServer } = require('socket.io');
 const cors = require('cors');
 const { config } = require('./config');
 const serverRoutes = require('./routes');
-
 const chatController = require('./components/chat/ChatController');
-
-// const ChatMongoContainer = require('./components/chat/ChatMongoContainer')
-
-// const chat = new ChatMongoContainer('mensajes')
-
-//MONGO
-// const Message = require('./components/chat/ChatMongoSchema');
-// const message = {
-//   author: {
-//     id: 'aasdasd',
-//     nombre: 'ccccccccc',
-//     apellido: 'apellido',
-//     alias: 'alias',
-//     edad: 1,
-//     avatar: 'avatar',
-//   },
-//   fecha: moment(new Date()).format('DD/MM/YYY HH:mm:ss'),
-//   text: 'asd',
-// };
-// Message.create(message)
-
-
 
 // NORMALIZE---------
 
@@ -56,7 +33,6 @@ function normalizar(mensajes) {
   
   return normalizados
 }
-
 
 //--------NORMALIZE
 
